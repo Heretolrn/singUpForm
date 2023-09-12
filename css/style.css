@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#myform {
+  display: flex;
+  width: 70%;
+  padding-right: 20px;
+  border-radius: 25px;
+  background: linear-gradient(to bottom, #87ceeb, #004e92);
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.774);
+}
+.container {
+  background-color: rgba(128, 128, 128, 0.767);
+}
+
+#myforminput {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#myforminput div {
+  width: 100%;
+}
+
+#myforminput div input {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  width: 100%;
+  height: 40px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.subbtn {
+  display: flex;
+}
+
+#loginbtn,
+#signupbtn {
+  width: 50%;
+  height: 40px;
+  background-color: transparent;
+  border-radius: 5px;
+}
+#loginbtn {
+  border: 1px solid white;
+  color: white;
+  outline: none;
+  transition: all 0.5s;
+}
+#signupbtn {
+  background-color: #034279;
+  outline: none;
+  color: white;
+  border: none;
+  transition: all 0.5s;
+}
+
+#signupbtn:hover {
+  background-color: #022d52;
+}
+#loginbtn:hover {
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+#image {
+  width: 100px;
+  flex-grow: 1;
+  overflow: hidden;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image img {
+  transition: transform 0.3s;
+}
+
+#image:hover img {
+  transform: scale(110%);
+}
+
+#image:hover #cover p {
+  color: white;
+}
+
+#image #cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.349);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#image #cover p {
+  color: rgb(83, 73, 73);
+}
+
+input[type="password"] {
+  margin: 0;
+}
+
+.errorm2,
+.errorm {
+  color: rgba(253, 0, 0, 0.877);
+}
